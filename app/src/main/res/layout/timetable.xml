@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_margin="10dp"
+        android:layout_width="287dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=" Find Trainer"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:background="#ffffff"/>
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        android:layout_toRightOf="@id/editText"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/Trainer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/trainera"
+                android:adjustViewBounds="true"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="showdialog"/>
+            <ImageView
+                android:id="@+id/Trainer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/trainerb"
+                android:adjustViewBounds="true"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="showdialog"/>
+            <ImageView
+                android:id="@+id/Trainer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/trainerc"
+                android:adjustViewBounds="true"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="showdialog"/>
+            <ImageView
+                android:id="@+id/Trainer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/trainerd"
+                android:adjustViewBounds="true"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="showdialog"/>
+            <ImageView
+                android:id="@+id/Trainer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/trainere"
+                android:adjustViewBounds="true"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="showdialog"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
